@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand{
+    color: #FF2D55 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.nav-link{
+    color: #FF2D55 !important;
+}
+.nav-item a:hover{
+    color: #FF0033 !important;
+}
+.bolo {
+    width: 100%;
+    height: 300px;
+    background: url('../img/julia-peretiatko-oXfOK1ymtPU-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bolo h1 {
+    background-color: #FF2D55;
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.destaque {
+    margin-top: 15px;
+    text-align: left; 
+}
+
+.destaque h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF2D55;
+}
+
+.sellcard{
+    grid-column: 1 / 3;
+    display: grid;
+    gap: 20px; 
+    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+   }
+
+   .produto{
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+   }
+
+   .produto img{
+    width: 80%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.5s;
+   }
+
+   .produto:hover img,
+   .produto button:hover ~ img {
+       transform: scale(1.1);
+   }
+   
+
+   .descricao {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.valor {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+.produto button {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+    background: #FF2D55;
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.25s ease;
+    margin: 0 auto;
+    display: block; 
+}
+
+
+.produto button:hover {
+    background: #FF0033;
+}
+
+footer {
+    background-color: #FF2D55;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+.btn-orcamento {
+    background-color: #ff2d55;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-orcamento:hover {
+    background-color: #e6264d;
+    color: white;
+    text-decoration: none;
+}
+
+.orcamento-section {
+    background-color: #ff2d55;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.orcamento-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.orcamento-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+  .login {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .login-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .form-control {
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    border-radius: 20px;
+  }
