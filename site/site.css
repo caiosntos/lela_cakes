@@ -137,7 +137,10 @@ footer {
     font-size: 2rem;
     color: #000;
     cursor: pointer;
+    display: none; /* <-- aqui! */
 }
+
+
 .btn-orcamento {
     background-color: #ff2d55;
     color: white;
