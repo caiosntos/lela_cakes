@@ -1,12 +1,14 @@
 const express = require("express");
-const app = express();
-const port = 8000;
+const path = require("path");
 
-app.listen(8000, (error) => {
-    if(error){
-        console.log("Deu erro!");
-        return;
-    }else{
-        console.log("Deu Boa!");
-    }
-})
+const app = express();
+const PORT = 5000;
+
+app.use(express.static(path.join(__dirname)));
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "Olá do Node.js 🚀" });
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
