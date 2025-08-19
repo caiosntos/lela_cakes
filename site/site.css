@@ -199,8 +199,13 @@ footer {
 .btn-danger:hover {
     background-color: white !important;
     color: #ff2d55 !important;
-    }
+}
 
 .social-btns button {
     margin: 4px;
-}    
+}
+
+.registroCliente{
+    text-align: center;
+    color: #ff2d55;
+}
