@@ -2,206 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #ffffff;
-}
-
-body.dark-mode .navbar-brand {
-    color: #FF2D55 !important;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
-
-body.dark-mode .nav-link {
-    color: #FF2D55 !important;
-}
-
-body.dark-mode .nav-item a:hover {
-    color: #FF0033 !important;
-}
-
-body.dark-mode .navbar {
-    background-color: #2d2d2d !important;
-}
-
-body.dark-mode .marketing .col-lg-4 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-body.dark-mode .marketing h2 {
-    font-weight: 400;
-    color: #ffffff;
-}
-
-body.dark-mode .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-    color: #cccccc;
-}
-
-body.dark-mode .btn-secondary {
-    background-color: #ff2d55 !important;
-    color: white !important;
-}
-
-body.dark-mode .btn-secondary:hover {
-    background-color: white !important;
-    color: #ff2d55 !important;
-}
-
-body.dark-mode footer {
-    background-color: #2d2d2d;
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
-}
-
-body.dark-mode .footer-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 1.5rem;
-}
-
-body.dark-mode .back-to-top {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    font-size: 2rem;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-body.dark-mode .btn-orcamento {
-    background-color: #ff2d55;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 15px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 100%;
-    margin: 15px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
-body.dark-mode .btn-orcamento:hover {
-    background-color: #e6264d;
-    color: white;
-    text-decoration: none;
-}
-
-body.dark-mode .orcamento-section {
-    background-color: #3d3d3d;
-    color: white;
-    padding: 25px;
-    border-radius: 8px;
-    margin: 30px 0;
-}
-
-body.dark-mode .orcamento-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-body.dark-mode .orcamento-section p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-body.dark-mode .card {
-    margin-top: 100px;
-    background-color: #2d2d2d;
-    border: 1px solid #444;
-    color: #ffffff;
-}
-
-body.dark-mode .btn-danger {
-    background-color: #ff2d55 !important;
-    color: white !important;
-}
-
-body.dark-mode .btn-danger:hover {
-    background-color: white !important;
-    color: #ff2d55 !important;
-}
-
-body.dark-mode .social-btns button {
-    margin: 4px;
-}
-
-body.dark-mode .registroCliente {
-    text-align: center;
-    color: #ff2d55;
-}
-
-.theme-toggle {
-    background: transparent;
-    border: 2px solid #ff2d55;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: #ff2d55;
-    margin-left: 15px;
-}
-
-.theme-toggle:hover {
-    background-color: #ff2d55;
-    color: white;
-    transform: scale(1.05);
-}
-
-.theme-toggle:active {
-    transform: scale(0.95);
-}
-
-.theme-toggle.rotating {
-    animation: spin 0.5s ease-in-out;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-body.dark-mode .theme-toggle {
-    border-color: #ff2d55;
-    color: #ff2d55;
-    background: transparent;
-}
-
-body.dark-mode .theme-toggle:hover {
-    background-color: #ff2d55;
-    color: white;
-}
-.navbar-nav .theme-toggle-item {
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.navbar-nav .theme-toggle-item .theme-toggle {
-    margin-left: 0;
-}
-
-/* LIGHT MODE STYLES (originais) */
 .navbar-brand{
     color: #FF2D55 !important;
     font-family: 'Poppins', sans-serif;
@@ -216,6 +16,7 @@ body.dark-mode .theme-toggle:hover {
     color: #FF0033 !important;
 }
 
+
 .carousel {
   margin-bottom: 4rem;
 }
@@ -229,6 +30,7 @@ body.dark-mode .theme-toggle:hover {
   backdrop-filter: blur(1px); 
 }
 
+
 .carousel-caption h1{
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.3);
   color: #fff;
@@ -239,6 +41,7 @@ body.dark-mode .theme-toggle:hover {
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
+
 
 .carousel-item {
   height: 32rem; 
@@ -258,7 +61,6 @@ body.dark-mode .theme-toggle:hover {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-
 .marketing h2 {
   font-weight: 400;
 }
@@ -301,6 +103,7 @@ footer {
     display: none;
 }
 
+
 .btn-orcamento {
     background-color: #ff2d55;
     color: white;
@@ -341,6 +144,7 @@ footer {
     font-size: 16px;
     margin-bottom: 15px;
 }
+
 
 .card {
     margin-top: 100px;

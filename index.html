@@ -22,17 +22,6 @@
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/991c35d2e8.js" crossorigin="anonymous"></script>
-    <script>
-              (function() {
-            const savedTheme = localStorage.getItem('darkMode');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            
-            if (savedTheme === 'enabled' || (savedTheme === null && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-                document.body.classList.add('dark-mode');
-            }
-        })();
-    </script>
 </head>
 
 <body>
@@ -61,11 +50,6 @@
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </li>
-                    <li class="nav-item theme-toggle-item">
-                      <button id="themeToggle" class="theme-toggle" title="Alternar tema">
-                        🌙
-                      </button>
-                    </li>
                 </ul>
             </div>
         </nav>
@@ -87,7 +71,7 @@
                         <h1>Lela Cakes</h1>
                         <p>A melhor confeitaria de Joinville e Região!</p>
                         <p>
-                            <a class="btn btn-lg btn-danger" href="#">Peça já</a>
+                            <a class="btn btn-lg btn-danger" href="#">Peça já!</a>
                         </p>
                     </div>
                 </div>
@@ -101,7 +85,7 @@
                     <div class="carousel-caption">
                         <h1>Docinhos e muito mais!</h1>
                         <p>
-                          <a class="btn btn-lg btn-danger" href="#">Confira!</a>
+                          <a class="btn btn-lg btn-danger" href="#">Confira</a>
                         </p>
                     </div>
                 </div>
