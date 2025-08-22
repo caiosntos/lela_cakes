@@ -1,19 +1,53 @@
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .navbar-brand{
-    color: #FF2D55 !important;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+  color: #e53935 !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .nav-link{
-    color: #FF2D55 !important;
+  color: #e53935 !important;
 }
 
-.nav-item a:hover{
-    color: #FF0033 !important;
+.nav-link {
+  color: #e53935 !important;
+  padding: 10px 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-item a:hover {
+  color: #c62828 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-login {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-login:hover {
+  background-color: #c62828;
 }
 
 
@@ -71,17 +105,17 @@ html{
 }
 
 .btn-secondary{
-    background-color: #ff2d55 !important;
+    background-color: #e53935 !important;
     color: white !important;
 }
 
 .btn-secondary:hover {
     background-color: white !important;
-    color: #ff2d55 !important;
+    color: #c62828 !important;
 }
 
 footer {
-    background-color: #FF2D55;
+    background-color: #e53935;
     color: #fff;
     padding: 20px 0;
     position: relative;
@@ -105,7 +139,7 @@ footer {
 
 
 .btn-orcamento {
-    background-color: #ff2d55;
+    background-color: #e53935;
     color: white;
     border: none;
     border-radius: 8px;
@@ -122,13 +156,13 @@ footer {
 }
 
 .btn-orcamento:hover {
-    background-color: #e6264d;
+    background-color: #c62828;
     color: white;
     text-decoration: none;
 }
 
 .orcamento-section {
-    background-color: #ff2d55;
+    background-color: #e53935;
     color: white;
     padding: 25px;
     border-radius: 8px;
@@ -151,20 +185,30 @@ footer {
 }
 
 .btn-danger {
-    background-color: #ff2d55 !important;
+    background-color: #e53935 !important;
     color: white !important;
 }
 
 .btn-danger:hover {
     background-color: white !important;
-    color: #ff2d55 !important;
+    color: #c62828 !important;
 }
 
 .social-btns button {
     margin: 4px;
 }
 
+.footer-icons{
+  color: #e53935 !important;
+}
+.bi-facebook:hover,
+.bi-twitter:hover,
+.bi-instagram:hover,
+.bi-linkedin:hover{
+   color: #c62828 !important;
+}
+
 .registroCliente{
     text-align: center;
-    color: #ff2d55;
+    color: #e53935;
 }
