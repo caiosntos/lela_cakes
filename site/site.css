@@ -50,6 +50,9 @@ html{
   background-color: #c62828;
 }
 
+.bi-person{
+  color: #e53935 !important;
+}
 
 .carousel {
   margin-bottom: 4rem;
@@ -201,6 +204,7 @@ footer {
 .footer-icons{
   color: #e53935 !important;
 }
+
 .bi-facebook:hover,
 .bi-twitter:hover,
 .bi-instagram:hover,
