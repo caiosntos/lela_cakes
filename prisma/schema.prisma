@@ -16,5 +16,4 @@ model User {
   name    String
   age     Int
   address String
-  password String
 }

@@ -43,16 +43,6 @@ app.put('/usuarios/:id', async (req, res) => {
   res.status(201).json(req.body);
 });
 
-
-app.delete('/usuariosq:id', async (req, res) =>{
-  await prisma.user.delete({
-    where:{
-      id: req.params.id
-    }
-  })
-  res.status(200).json({message:'Usuario deletado com sucesso!'});
-})
-
 app.use(express.static(path.join(__dirname)));
 app.get("/api/hello", (req, res) => {
 });
