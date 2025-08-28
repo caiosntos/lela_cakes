@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lela Cakes</title>
-    <script src="js/app.js" defer></script>
+    <script src="../js/app.js" defer></script>
     <link rel="stylesheet" href="../site/site.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
 <body>
     
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html"><i class="bi bi-cake2"  style="font-size: 2rem; margin-right: 8px;"></i>Lela Cakes</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -38,13 +38,64 @@
         </div>
     </nav>
 </header>
+
 <main class="container mt-5">
-    <div class="jumbotron text-center">
-    <h1 class="text-center">Catalogo</h1>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora sapiente exercitationem ab maiores! Ex velit sed eveniet voluptate dignissimos porro corrupti nemo nesciunt, corporis animi esse assumenda saepe illo.</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, sint voluptate? Velit mollitia rem, reprehenderit fuga maiores quo quasi qui voluptatum repudiandae recusandae a cumque expedita ducimus. Quaerat, voluptates dignissimos?</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, porro officia non alias laborum placeat incidunt cupiditate quibusdam accusantium. Earum voluptatem error libero id itaque, cumque dicta quos qui ipsam.</p>
+  <nav aria-label="breadcrumb" class="mb-3">
+    <ol class="breadcrumb bg-white p-0 m-0">
+      <li class="breadcrumb-item">
+        <a href="../index.html" class="text-muted text-uppercase">Página Principal</a>
+      </li>
+      <li class="breadcrumb-item active text-uppercase" aria-current="page">Catálogo</li>
+    </ol>
+  </nav>
+  <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
+    <h1 class="titulo-catalogo m-0">Catálogo</h1>
+    <div class="d-flex align-items-center">
+      <label for="ordenar" class="mr-2 font-weight-bold text-uppercase">
+        Ordenar por:
+      </label>
+      <select id="ordenar" class="form-control" style="width: 180px;" onchange="ordenarProdutos(this.value)">
+        <option value="novidades">Novidades</option>
+        <option value="asc">Mais baratos</option>
+        <option value="desc">Mais caros</option>
+      </select>
     </div>
-  </main>
+  </div>
+    <div class="row" id="catalogo">
+      <div class="col-md-4 mb-4 produto" data-preco="25">
+        <div class="card1">
+          <img src="../img/b6a2b806-1010-4b0d-8503-b88fce731a00.jpg" class="card-img-top" alt="Bolo de Chocolate">
+          <div class="card-body">
+            <h5 class="card-title">Bolo de chocolate</h5>
+            <p class="card-text">Bolo com cobertura e recheio de chocolate</p>
+            <p class="font-weight-bold">R$25</p>
+            <button class="btn btn-danger">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 produto" data-preco="3">
+        <div class="card1">
+          <img src="../img/cf8691ab-7ea7-4f4a-88b6-429984a24641.jpg" class="card-img-top" alt="Bolo de rolo">
+          <div class="card-body">
+            <h5 class="card-title">Bolo de rolo</h5>
+            <p class="card-text">Bolo típico nordestino</p>
+            <p class="font-weight-bold">R$3</p>
+            <button class="btn btn-danger">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 produto" data-preco="5">
+        <div class="card1">
+          <img src="../img/3255f378-7407-4207-a43d-973124e1f0b6.jpg" class="card-img-top" alt="Docinhos">
+          <div class="card-body">
+            <h5 class="card-title">Docinhos</h5>
+            <p class="card-text">Brigadeiros, beijinho, surpresa de uva e outros</p>
+            <p class="font-weight-bold">R$5</p>
+            <button class="btn btn-danger">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
 </body>
 </html>

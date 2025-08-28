@@ -12,3 +12,15 @@ $(window).scroll(function() {
         $('.back-to-top').fadeOut();
     }
 });
+
+  function ordenarProdutos(ordem) {
+    let container = document.getElementById("catalogo");
+    let produtos = Array.from(container.getElementsByClassName("produto"));
+
+    produtos.sort((a, b) => {
+      let precoA = parseFloat(a.getAttribute("data-preco"));
+      let precoB = parseFloat(b.getAttribute("data-preco"));
+      return ordem === "asc" ? precoA - precoB : precoB - precoA;
+    });
+    produtos.forEach(produto => container.appendChild(produto));
+}

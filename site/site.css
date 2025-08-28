@@ -187,6 +187,12 @@ footer {
     margin-top: 100px;
 }
 
+.card1{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 .btn-danger {
     background-color: #e53935 !important;
     color: white !important;
@@ -215,4 +221,13 @@ footer {
 .registroCliente{
     text-align: center;
     color: #e53935;
+}
+
+.mr-2{
+  font-size: 0.9rem; 
+  color: #e53935;
+}
+
+.form-control{
+  width: 180px;
 }
